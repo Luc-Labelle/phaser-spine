@@ -4194,7 +4194,8 @@ var spine;
 						data.darkColor.setFromString(dark);
 					}
 					data.attachmentName = this.getValue(slotMap, "attachment", null);
-          data.blendMode = 3; //SkeletonJson.blendModeFromString(this.getValue(slotMap, "blend", "normal"));
+					data.blendMode = SkeletonJson.blendModeFromString(this.getValue(slotMap, "blend", "normal"));
+          				//data.blendMode = 3;
 					skeletonData.slots.push(data);
 				}
 			}
